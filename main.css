@@ -1,91 +1,94 @@
-body {
-    background-color: gainsboro;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    background-color: #e4ebee;
-    padding: 16px 0px;
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    background-color: #132972dc;
     color: #fff;
+    padding-top: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.containerFlex {
     display: flex;
-    border-bottom: 14px solid #57bfcc;
-    justify-content: center;
-    text-transform: uppercase;
-    font-style: italic;
 }
 
-h1{
-    color: rgb(100, 237, 105);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 40px;
-   
-}
-form {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 26px;
-}
-img {
-    height: 100px;
+
+section {
+    padding: 48px 0;
 }
 
-input {
-    padding: 8px;
-    width: 250px;
+section h2 {
+    margin-bottom: 16px;
 }
+
 
 button {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 8px;
-    background-color: #70d989;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-top-left-radius: 10px;
-}
-
-button:hover {
-    background-color: #a8de34;
-}
-
-#botao-cancelar{
-    order: none;
-    background-color: rgb(234, 59, 15);
-    font-size: 14px;
-    font-weight: bold;
+    background-color: #235dc9;
     color: #fff;
-    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 8px 0px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 6px;
 }
 
-#lista-tarefas {
-    list-style-type: none;
-    padding: 0;
-    max-width: 300px;
-    margin: 0 auto;
+.contactField {
+    margin-bottom: 16px;
 }
 
-#lista-tarefas li {
-    padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
-    cursor: pointer;
+.contactField label {
+    display: block;
+    font-weight: bold;
 }
 
-#lista-tarefas li.completed {
-    text-decoration: line-through;
-    color: gray;
+.contactField input,
+.contactField textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
 }
-footer {
-    margin-top: 20px;
-    text-align: center;
-    color: #666;
+
+.contactField textarea {
+    resize: none;
+    height: 120px;
 }
-footer p {
-    margin: 5px 0;
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
 }
